@@ -77,7 +77,8 @@ Test cases based on User Story: https://docs.google.com/spreadsheets/d/1fCXSx9H1
 
 ##### Subtask 2
 
-Test cases based on own experience: 
+Test cases based on own experience: https://docs.google.com/spreadsheets/d/1tB4qH8yE8Z8vlBmzYdgiMLMlWVJHy-dD/edit?usp=sharing&ouid=103988214272257934032&rtpof=true&sd=true
+
 
 ##### Subtask 3
 
