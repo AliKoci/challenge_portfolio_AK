@@ -68,3 +68,20 @@ Błędy w polskiej wersji językowej (printscreeny do błędów 1-5 na dysku goo
 
 *Uwagi do następnej sesji eksploracyjnej: przetestować dodawanie raportów i meczów*.
 
+
+### TASK 2 https://drive.google.com/drive/folders/1Wlex-hjNYMkfRaSQIz_YeHg1Q4oiGR0u?usp=share_link
+
+##### Subtask 1
+Test cases based on User Story: https://docs.google.com/spreadsheets/d/1fCXSx9H1WHpmUckkFsxQXEN7WVACTqxX/edit?usp=share_link&ouid=103988214272257934032&rtpof=true&sd=true
+
+
+##### Subtask 2
+
+Test cases based on own experience: 
+
+##### Subtask 3
+
+*Why we write test cases?*
+
+Well-written test cases help systematize the testing process. They allow to catch inaccuracies in the documentation, to clarify requirements. They make it easier and faster for a new person in team unfamiliar with the project to perform tests, for example, in case of illness of another tester. This reduces costs and the risk of schedule delays. Test cases are also useful for test automation - they describe the steps that should be automated. Of course, the number of test cases and their level of detail depend on the specifics of a particular project.
+
