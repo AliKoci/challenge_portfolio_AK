@@ -86,3 +86,29 @@ Test cases based on own experience: https://docs.google.com/spreadsheets/d/1tB4q
 
 Well-written test cases help systematize the testing process. They allow to catch inaccuracies in the documentation, to clarify requirements. They make it easier and faster for a new person in team unfamiliar with the project to perform tests, for example, in case of illness of another tester. This reduces costs and the risk of schedule delays. Test cases are also useful for test automation - they describe the steps that should be automated. Of course, the number of test cases and their level of detail depend on the specifics of a particular project.
 
+### TASK 4 https://drive.google.com/drive/folders/1g0il0nEQ0cTZXfTFLyqGU97zcokEm0QL?usp=sharing
+
+##### Subtask 1 and 2
+
+Exploratory testing and bug reporting: 
+https://drive.google.com/drive/folders/1Gcf53hQU0Rd3Md0SX0yBnrfDwtC29Iku?usp=sharing
+https://docs.google.com/spreadsheets/d/1IpL74dSupXD_j2nwyPPNb39hevhDRuo_/edit?usp=sharing&ouid=103988214272257934032&rtpof=true&sd=true
+
+
+##### Subtask 3
+
+Do czego służy ta aplikacja? Jaki jest cel tej aplikacji?
+
+Aplikacja OLX jest mobilną wersją strony internetowej portalu ogłoszeń. Obejmuje oferty kupna/sprzedaży, wymiany, poszukiwania/oferowania pracy, usług, „oddam za darmo”.
+Kto ma być użytkownikiem końcowym aplikacji? 
+Aplikacja przeznaczona jest dla klientów indywidulanych i firmowych, rozróżnienie tych dwóch typów użytkowników widoczne jest już w momencie rejestracji, gdy trzeba wybrać jedną z opcji. 
+
+Czy aplikacja jest user friendly?  Jak byś usprawnił aplikację?
+
+Aplikacja przyjazna użytkownikowi powinna być przyjemna i łatwa w obsłudze dla różnych użytkowników. Na plus zaliczam poprawne wyświetlanie w pionie i poziomie, możliwość wyboru trybu ciemnego i jasnego, duże ikony kategorii, ogólną czytelność wyświetlanej strony i szybkość działania. Jeśli chodzi o dostęp do najczęstszych funkcji, to również mam mieszane uczucia. Z jednej strony są  popularne odnośniki na dole strony – strona główna, ulubione, dodaj, wiadomości, konto, ale… Strona główna opisana jest błędnie jako szukaj, brakuje odnośnika szukaj (jest co prawda u góry strony), a odnośnik konto przekierowuje do mnóstwa innych odnośników, z których jeden z najważniejszych – ustawienia – jest niemal na samym dole. Odnośniki pomoc, regulamin, polityka prywatności przekierowują do przeglądarki mobilnej, co wydłuża czas odnalezienia potrzebnych treści. Trudno znaleźć funkcję stworzenia profilu zawodowego kandydata i dołączenia CV – są dostępne dopiero po przewinięciu części opcji w koncie. Brakuje również dostępnego kontaktu z właścicielami/twórcami portalu.
+
+Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?
+
+Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a smartfona/tabletu. Są na pewno kosztowniejsze i bardziej czasochłonne ze względu na zalecane testowanie na różnych urządzeniach – emulatory nie do końca zastępują testowanie na rzeczywistym urządzeniu. Ze względu na postępującą cyfryzację i uzależnienie możliwości skorzystania z różnych usług od użycia aplikacji mobilnej szczególnego znaczenia nabierają testy dostępności.
+
+
