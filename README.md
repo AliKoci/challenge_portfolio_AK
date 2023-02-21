@@ -120,70 +120,90 @@ Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a 
 1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.
 
 
-    __SELECT * FROM actors ORDER BY surname__
+    __SELECT * FROM actors__ 
+      
+    __ORDER BY surname;__
 
     ![5_1](https://user-images.githubusercontent.com/122850133/218643829-1607fd5c-9bed-4d8d-8768-9f1815c1f3b2.jpg)
 
 2. Wyświetl film, który powstał w 2019 roku.
 
 
-    __SELECT * FROM movies WHERE year_of_production = 2019__
+    __SELECT * FROM movies__ 
+      
+    __WHERE year_of_production = 2019;__
 
     ![5_2](https://user-images.githubusercontent.com/122850133/218645395-ce72e1dd-1dfa-4649-a854-445da1f3d067.jpg)
 
 3. Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem.
 
     
-    __SELECT * FROM movies WHERE year_of_production BETWEEN 1900 AND 1999__
+    __SELECT * FROM movies__ 
+      
+    __WHERE year_of_production BETWEEN 1900 AND 1999;__
 
    ![5_3](https://user-images.githubusercontent.com/122850133/218646084-f45a1885-bdd8-43e0-a63f-4388e4297933.jpg) 
 
 4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$
 
     
-    __SELECT title, price FROM `movies` WHERE price < 7__
+    __SELECT title, price FROM `movies`__ 
+      
+    __WHERE price < 7;__
 
     ![5_4](https://user-images.githubusercontent.com/122850133/218646923-76a95de8-1984-4aad-94f2-ef11cd297178.jpg)
 
 5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN.
 
 
-    __SELECT * FROM actors WHERE actor_id >=4 AND actor_id<=7__
+    __SELECT * FROM actors__ 
+      
+    __WHERE actor_id >=4 AND actor_id<=7;__
 
     ![5_5](https://user-images.githubusercontent.com/122850133/218647677-5fdce8ee-307d-47fc-8cba-e7a46fa57950.jpg)
 
 6. Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny.
 
 
-    __SELECT * FROM customers WHERE customer_id = 2 OR customer_id = 4 OR customer_id = 6__
+    __SELECT * FROM customers__ 
+      
+    __WHERE customer_id = 2 OR customer_id = 4 OR customer_id = 6;__
 
     ![5_6](https://user-images.githubusercontent.com/122850133/218648030-538d43af-238b-4b4b-bb66-b2ccc48f8d05.jpg)
 
 7. Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN.
 
     
-    __SELECT * FROM customers WHERE customer_id IN (1, 3, 5)__
+    __SELECT * FROM customers__
+    
+    __WHERE customer_id IN (1, 3, 5);__
 
     ![5_7](https://user-images.githubusercontent.com/122850133/218649266-ffc87c15-9eac-4aa9-a3c7-2e7f64becb72.jpg)
 
 8. Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”.
 
     
-    __SELECT * FROM actors WHERE name LIKE 'An%'__
+    __SELECT * FROM actors__
+    
+    __WHERE name LIKE 'An%';__
 
     ![5_8](https://user-images.githubusercontent.com/122850133/218649699-700a1735-823a-4fea-8a4f-b223ba5408a7.jpg)
 
 9. Wyświetl dane klienta, który nie ma podanego adresu email.
 
     
-    __SELECT * FROM customers WHERE email IS NULL__  
+    __SELECT * FROM customers__
+    
+    __WHERE email IS NULL;__  
 
     ![5_9](https://user-images.githubusercontent.com/122850133/218649963-b9f3b3cd-42eb-4b92-996a-712858df004a.jpg)  
 
 10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.
 
     
-    __SELECT * FROM movies WHERE price > 9 AND movie_id > 2 AND movie_id < 8__
+    __SELECT * FROM movies__
+    
+    __WHERE price > 9 AND movie_id > 2 AND movie_id < 8;__
 
     ![5_10](https://user-images.githubusercontent.com/122850133/218654322-090c3bbb-824b-4499-9be1-c76ef07fb0b6.jpg)
     
@@ -196,28 +216,68 @@ Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a 
 
 11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd.
 
-    __UPDATE customers
-      SET surname = 'Miler'
-      WHERE surname = 'Muler';__
+
+    __UPDATE customers__
+      
+    __SET surname = 'Miler'__
+      
+    __WHERE surname = 'Muler';__
+    
       ![11](https://user-images.githubusercontent.com/122850133/220407011-7dac302a-ee40-41a4-81b0-f48d52afd8a1.jpg)
 
 12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej.
 
-    __SELECT movie_id, name, email 
-      FROM sale  
-      JOIN customers ON sale.customer_id = customers.customer_id WHERE movie_id = 4;__
+
+    __SELECT movie_id, name, email__ 
+      
+    __FROM sale__  
+    
+    __JOIN customers ON sale.customer_id = customers.customer_id WHERE movie_id = 4;__
       
       ![12](https://user-images.githubusercontent.com/122850133/220408750-7807b5bc-7163-4e81-b617-6b15cd0effa3.jpg)
 
 13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com.
 
-    __UPDATE customers
-      SET email = 'pati@mail.com'
-      WHERE name = 'Patrycja';__
+
+    __UPDATE customers__
+      
+    __SET email = 'pati@mail.com'__
+      
+    __WHERE name = 'Patrycja';__
       
       ![13](https://user-images.githubusercontent.com/122850133/220409410-225d9491-ed21-412e-8528-776bd66ffbf8.jpg)
       
+14. Dla każdego zakupu wyświetl imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia). 
+
+
+    __SELECT name AS imię, surname AS nazwisko, title AS tytuł__
       
+    __FROM customers INNER JOIN sale ON customers.customer_id=sale.customer_id INNER JOIN movies__ 
+      
+    __ON sale.movie_id=movies.movie_id;__
+      
+      ![14](https://user-images.githubusercontent.com/122850133/220410249-0ed21944-8f2b-423e-b16f-e9d9cd68c012.jpg)
+      
+15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska, np. Natalie Pilling → Nag.
 
 
+    __ALTER TABLE customers ADD COLUMN pseudonym varchar (3)__ 
+      
+    __UPDATE customers__ 
+      
+    __SET pseudonym = CONCAT(LEFT(name,2), RIGHT(surname,1));__
+      
+     ![15_1](https://user-images.githubusercontent.com/122850133/220411133-4a555c6c-d1c9-45c9-a663-41348e329f56.jpg) 
+     
+     ![15_2](https://user-images.githubusercontent.com/122850133/220411711-6c421b1c-2586-4c0f-8984-50b4035087d4.jpg)
+  
+16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.      
 
+
+    __SELECT DISTINCT title__ 
+     
+    __FROM movies__  
+     
+    __JOIN sale ON sale.movie_id = movies.movie_id;__     
+     
+    ![16](https://user-images.githubusercontent.com/122850133/220415290-d23fdcc3-9640-4929-9e8a-721b40e6cc35.jpg)
