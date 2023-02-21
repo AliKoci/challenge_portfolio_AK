@@ -300,3 +300,41 @@ Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a 
      __ORDER BY name;__        
 
      ![17](https://user-images.githubusercontent.com/122850133/220417550-e7772c4b-5428-4ae4-80a4-31a81f177269.jpg)
+     
+18. Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).
+
+
+    __UPDATE movies__ 
+    
+    __SET price = (price + 2.5)__
+    
+    __WHERE year_of_production > 2000;__
+    
+      ![18_1](https://user-images.githubusercontent.com/122850133/220429008-274bf77f-ac37-49cd-96ea-669c91b65eaa.jpg)
+      
+      ![18_2](https://user-images.githubusercontent.com/122850133/220430908-eb0d14c0-ef41-4a61-8d2a-e164095af527.jpg)
+      
+19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał.
+
+
+
+    __SELECT name, surname, title__
+
+    __FROM actors__
+
+    __INNER JOIN cast ON cast.actor_id = actors.actor_id__ 
+
+    __INNER JOIN movies ON cast.movie_id = movies.movie_id__
+    
+    __WHERE actors.actor_id = 4;__    
+    
+     ![19](https://user-images.githubusercontent.com/122850133/220430986-434997b5-c5d7-4623-bdc3-b22cb1bf4898.jpg)
+     
+20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa
+
+
+    __INSERT INTO customers (customer_id, name, surname, email, pseudonym__)
+
+    __VALUES ('7', 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');__
+
+     ![20](https://user-images.githubusercontent.com/122850133/220431424-c428bc39-8db7-4511-aeb1-09cd67457328.jpg)
