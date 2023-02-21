@@ -342,12 +342,12 @@ Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a 
      
 ##### Subtask 2
 
-
     
    ![wynik_testu](https://user-images.githubusercontent.com/122850133/220435523-e2631128-e3e4-4d43-9377-45ad4b2c6826.jpg)
 
 
-
 ##### Subtask 3
+
+https://github.com/AliKoci/AlicjaKocinska_Portfolio/blob/main/README.md
 
 
