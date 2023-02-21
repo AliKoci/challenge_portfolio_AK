@@ -186,3 +186,38 @@ Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a 
     __SELECT * FROM movies WHERE price > 9 AND movie_id > 2 AND movie_id < 8__
 
     ![5_10](https://user-images.githubusercontent.com/122850133/218654322-090c3bbb-824b-4499-9be1-c76ef07fb0b6.jpg)
+    
+
+### TASK 6
+
+
+##### Subtask 1 SQL part 2
+
+
+11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd.
+
+    __UPDATE customers
+      SET surname = 'Miler'
+      WHERE surname = 'Muler';__
+      ![11](https://user-images.githubusercontent.com/122850133/220407011-7dac302a-ee40-41a4-81b0-f48d52afd8a1.jpg)
+
+12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej.
+
+    __SELECT movie_id, name, email 
+      FROM sale  
+      JOIN customers ON sale.customer_id = customers.customer_id WHERE movie_id = 4;__
+      
+      ![12](https://user-images.githubusercontent.com/122850133/220408750-7807b5bc-7163-4e81-b617-6b15cd0effa3.jpg)
+
+13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com.
+
+    __UPDATE customers
+      SET email = 'pati@mail.com'
+      WHERE name = 'Patrycja';__
+      
+      ![13](https://user-images.githubusercontent.com/122850133/220409410-225d9491-ed21-412e-8528-776bd66ffbf8.jpg)
+      
+      
+
+
+
