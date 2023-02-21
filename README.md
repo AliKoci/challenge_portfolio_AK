@@ -276,8 +276,27 @@ Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a 
 
     __SELECT DISTINCT title__ 
      
-    __FROM movies__  
+    __FROM movies__
+    
      
     __JOIN sale ON sale.movie_id = movies.movie_id;__     
      
     ![16](https://user-images.githubusercontent.com/122850133/220415290-d23fdcc3-9640-4929-9e8a-721b40e6cc35.jpg)
+    
+    
+ 17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)
+
+
+     __SELECT name__
+ 
+     __FROM actors__
+
+     __UNION__ 
+
+     __SELECT name__
+    
+     __FROM customers__
+    
+     __ORDER BY name;__        
+
+     ![17](https://user-images.githubusercontent.com/122850133/220417550-e7772c4b-5428-4ae4-80a4-31a81f177269.jpg)
