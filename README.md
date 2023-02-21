@@ -338,3 +338,16 @@ Różnice wynikają m.in. z różnego sposobu korzystania z komputera/laptopa a 
     __VALUES ('7', 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');__
 
      ![20](https://user-images.githubusercontent.com/122850133/220431424-c428bc39-8db7-4511-aeb1-09cd67457328.jpg)
+     
+     
+##### Subtask 2
+
+
+    
+   ![wynik_testu](https://user-images.githubusercontent.com/122850133/220435523-e2631128-e3e4-4d43-9377-45ad4b2c6826.jpg)
+
+
+
+##### Subtask 3
+
+
